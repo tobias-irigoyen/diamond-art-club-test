@@ -2888,7 +2888,13 @@ details-disclosure > details {
 }
 
 /* Product specs styles */
+.characteristics-container {
+  display: flex;
+}
+.specs-icon-container {
+  margin-right: 5px;
+}
 .characteristics-metafield-name {
   font-weight: 600;
-  display: block;
+  display: block;  
 }
