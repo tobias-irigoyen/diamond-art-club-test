@@ -112,7 +112,7 @@
         "1579368a-e950-4381-abb3-a64cdf588595": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"characteristics-container\">\n  {% if product.metafields.custom.amount_icon %}\n    <img src=\"{{ product.metafields.custom.amount_icon | img_url: '28x28' }}\" alt=\"size icon\" width=\"28\" height=\"28\" \/>\n  {% endif %}\n  <span class=\"characteristics-metafield-name\">Amount<\/span>\n  <span>{{ product.metafields.custom.amount_spec }} Diamonds<\/span>\n<\/div>"
+            "custom_liquid": "<div class=\"characteristics-container\">\n  {% if product.metafields.custom.amount_icon %}\n  <div class=\"specs-icon-container\">\n    <img src=\"{{ product.metafields.custom.amount_icon | img_url: '28x28' }}\" alt=\"size icon\" width=\"28\" height=\"28\" \/>\n  <\/div>  \n  {% endif %}\n  <div class=\"specs-container\">\n    <span class=\"characteristics-metafield-name\">Amount<\/span>\n    <span>{{ product.metafields.custom.amount_spec }} Diamonds<\/span>\n  <\/div>\n<\/div>"
           }
         },
         "755b6a92-0c22-45b0-af40-d0f06b5937f8": {
