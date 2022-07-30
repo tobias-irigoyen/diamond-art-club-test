@@ -233,6 +233,15 @@
                 {%- endif -%}
               </div>
             {%- endif -%}
+            {%  if  product.tags %}
+            <div class="product-tags">
+              <ul class="product-tags-list">
+                {% for tag in product.tags %}
+                <li>{{ tag }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+             {% endif %}
             <div {{ block.shopify_attributes }}>
               {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
               {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -409,6 +418,7 @@
                 </div>
               </div>
             </noscript>
+            
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
