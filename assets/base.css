@@ -2886,3 +2886,9 @@ details-disclosure > details {
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
+
+/* Product specs styles */
+.characteristics-metafield-name {
+  font-weight: 600;
+  display: block;
+}
