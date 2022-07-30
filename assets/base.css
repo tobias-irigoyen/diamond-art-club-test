@@ -2892,7 +2892,7 @@ details-disclosure > details {
   display: flex;
 }
 .specs-icon-container {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .characteristics-metafield-name {
   font-weight: 600;
