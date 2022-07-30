@@ -106,7 +106,7 @@
         "98274823-d4e5-4ab5-8fa4-4974198b12ef": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"characteristics-container\">\n  {% if product.metafields.custom.icon_colors %}\n    <img src=\"{{ product.metafields.custom.icon_colors | img_url: '28x28' }}\" alt=\"size icon\" width=\"28\" height=\"28\" \/>\n  {% endif %}\n  <span class=\"characteristics-metafield-name\">Colors<\/span>\n  <span>{{ product.metafields.custom.spec_colors }} {% if product.metafields.custom.spec_aurora_borealis_quantity %} + {{ product.metafields.custom.spec_aurora_borealis_quantity }} Aurora Borealis {% endif %}<\/span>\n<\/div>"
+            "custom_liquid": "<div class=\"characteristics-container\">\n  {% if product.metafields.custom.icon_colors %}\n  <div class=\"specs-icon-container\">\n    <img src=\"{{ product.metafields.custom.icon_colors | img_url: '28x28' }}\" alt=\"size icon\" width=\"28\" height=\"28\" \/>\n  <\/div>  \n  {% endif %}\n  <div class=\"specs-container\">\n    <span class=\"characteristics-metafield-name\">Colors<\/span>\n    <span>{{ product.metafields.custom.spec_colors }} {% if product.metafields.custom.spec_aurora_borealis_quantity %} + {{ product.metafields.custom.spec_aurora_borealis_quantity }} Aurora Borealis {% endif %}<\/span>\n  <\/div>\n<\/div>"
           }
         },
         "1579368a-e950-4381-abb3-a64cdf588595": {
