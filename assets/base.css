@@ -2897,4 +2897,5 @@ details-disclosure > details {
 .characteristics-metafield-name {
   font-weight: 600;
   display: block;  
+  line-height: 1;
 }
