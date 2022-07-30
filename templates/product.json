@@ -96,6 +96,12 @@
           "settings": {
             "custom_liquid": "<div class=\"characteristics-container\">\n{% if product.metafields.custom.icon_shape %}\n<img src=\"{{ product.metafields.custom.icon_shape | img_url: '28x28' }}\" alt=\"Top Notes\" width=\"28\" height=\"28\" \/>\n{% endif %}\n<span class=\"characteristics-metafield-name\">Shape<\/span>\n<span> {{ product.metafields.custom.spec_shape }} <\/span>\n<\/div>"
           }
+        },
+        "2c674755-89ec-4bcd-9974-e2962910043f": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"characteristics-container\">\n{% if product.metafields.custom.icon_size %}\n<img src=\"{{ product.metafields.custom.icon_size | img_url: '28x28' }}\" alt=\"size icon\" width=\"28\" height=\"28\" \/>\n{% endif %}\n<span class=\"characteristics-metafield-name\">Shape<\/span>\n<span> {{ product.metafields.custom.spec_shape }} <\/span>\n<\/div>"
+          }
         }
       },
       "block_order": [
@@ -112,7 +118,8 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
-        "74737ff7-2ba3-4493-9be8-99fa1047971b"
+        "74737ff7-2ba3-4493-9be8-99fa1047971b",
+        "2c674755-89ec-4bcd-9974-e2962910043f"
       ],
       "settings": {
         "enable_sticky_info": true,
