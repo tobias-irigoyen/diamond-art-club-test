@@ -43,7 +43,11 @@
     @media screen and (max-width: 768px) {
       .global-media-settings.global-media-settings--no-shadow.active {      
         width: 85%;
-      }      
+      }            
+    .swiper {
+      width: calc(85% - var(--grid-desktop-horizontal-spacing) / 2);
+      height: max-content!important;
+    }    
     }
   {%- endstyle -%}
 
