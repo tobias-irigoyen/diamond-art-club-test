@@ -3230,7 +3230,7 @@ footer .bottom-footer ul li a {
 /* Swiper slider */
 
 .swiper {
-  width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
+  width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
   height: max-content!important;
 }    
 .swiper-slide {
