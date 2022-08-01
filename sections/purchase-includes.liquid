@@ -1,12 +1,101 @@
+-{%- style -%}
+  .custom_heading {
+    text-align: center;
+  }
+  .columns_container {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+  .columns_container .custom_column {    
+    display: flex;
+  }
+ .custom_column img {    
+    align-self: start;  
+   margin-right: 15px;
+  }
+  .custom_column p {
+    margin: 0;
+    line-height: 1;
+  }
+  .custom_column.\31 --column {
+    flex-basis: 100%!important;
+  }
+  .custom_column.\32 --column {    
+    flex-basis: 50%!important;
+  }
+  .custom_column.\33 --column {    
+    flex-basis: 33.33%!important;
+    max-width: 300px;
+  }
+  .custom_column.\34 --column {
+    flex-basis: 30%!important;
+    max-width: 230px;
+  }
+{%- endstyle -%}
+
+{% if section.settings.custom_heading %}
+<h2 class="custom_heading">{{ section.settings.custom_heading }}</h2>
+{% endif %}
+
+<div class="columns_container {{ section.settings.columns_quantity }}--columns">
+  {% for block in section.blocks %}
+  <div class="custom_column {{ section.settings.columns_quantity }}--column">
+    <img src="{{ block.settings.column_image | img_url: '28x28'}}" alt="column image" class="column_image" />
+    <p class="column_text">{{ block.settings.text }}</p>
+  </div>
+  {% endfor %}
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+    "name": "t:sections.purchase_includes.name",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom_heading",
+        "label": "t:sections.purchase_includes.settings.custom_heading.label"
+      },
+      {
+        "type": "range",
+        "id": "columns_quantity",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "default": 2,
+        "label": "t:sections.purchase_includes.settings.columns_quantity.label"
+      }
+    ],
+  "presets": [
+    {
+      "name": "t:sections.presets.purchase_includes.name"
+    }
+    ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.purchase_includes.blocks.column.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "column_image",
+          "label": "t.sections.purchase_includes.blocks.column.settings.column_image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "t:sections.purchase_includes.blocks.column.settings.text.label"
+        }
+      ]
+    }
+  ]
+} 
+
+
+
+  
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
