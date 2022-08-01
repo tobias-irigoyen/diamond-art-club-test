@@ -3236,6 +3236,10 @@ footer .bottom-footer ul li a {
 .swiper-slide {
   width: 100%!important;
 }
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  display: flex;
+}
+
 
 .grid__item product__media-wrapper {
   display: none!important;
