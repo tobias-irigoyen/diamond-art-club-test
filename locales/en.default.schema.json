@@ -2762,6 +2762,12 @@
           }
         }
       }
+    },
+    "custom_footer": {
+      "name": "Custom Footer",
+      "presets": {
+        "name": "Custom Footer"
+      }
     }
   }
 }
