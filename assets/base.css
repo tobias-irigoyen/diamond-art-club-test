@@ -3225,3 +3225,21 @@ footer .bottom-footer ul li a {
     }
 }
 
+
+
+/* Swiper slider */
+
+.swiper {
+  height: max-content!important;
+}    
+.swiper-slide {
+  width: 100%!important;
+}
+
+.grid__item product__media-wrapper {
+  display: none!important;
+}
+
+.product--stacked .product__media-item {
+  max-width: unset!important;
+}
