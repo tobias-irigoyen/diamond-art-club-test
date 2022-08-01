@@ -40,6 +40,11 @@
     .product-media-modal.media-modal {
       background-color: #000;
     }
+    @media screen and (max-width: 768px) {
+      .product-media-modal__content gradient img {      
+        width: 85%;
+      }      
+    }
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
