@@ -2751,13 +2751,13 @@
       },
       "blocks": {
         "column": {
-          "name": "Column",
+          "name": "Item",
           "settings": {
             "text": {
-              "label": "Column lead"
+              "label": "Item lead"
             },
-            "column_image": {
-              "label": "Column image"
+            "col_image": {
+              "label": "Item image"
             }
           }
         }
