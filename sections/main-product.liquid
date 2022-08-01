@@ -20,6 +20,10 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
     }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: flex!important;
+    }
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
