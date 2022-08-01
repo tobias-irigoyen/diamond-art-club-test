@@ -42,7 +42,7 @@
 <div class="columns_container {{ section.settings.columns_quantity }}--columns">
   {% for block in section.blocks %}
   <div class="custom_column {{ section.settings.columns_quantity }}--column">
-    <img src="{{ block.settings.column_image | img_url: '28x28'}}" alt="column image" class="column_image" />
+    <img src="{{ block.settings.col_image | img_url: '28x28'}}" alt="column image" class="column_image" />
     <p class="column_text">{{ block.settings.text }}</p>
   </div>
   {% endfor %}
