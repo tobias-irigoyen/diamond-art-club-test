@@ -2736,7 +2736,7 @@
         "name": "Collapsible content"
       }
     },
-    "purchase-includes": {
+    "purchase_includes": {
       "name": "Purchase includes",
       "settings": {
         "custom_heading": {
