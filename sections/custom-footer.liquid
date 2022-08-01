@@ -1,8 +1,392 @@
 -{%- style -%}
+
+footer * {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-image: url("//cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/footer-bg-new.png?v=152546701259578080271658394209"),linear-gradient(180deg,#133e42,#082023);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: auto;
+}
+footer .footer-top-row {
+    padding-bottom: 2.25rem;
+    padding-top: 2rem;
+    max-width: 96%;
+    max-width: 1338px;
+    margin: auto;
+}
+footer .footer-top-row .footer-logo {
+    height: 25.7px;
+}
+footer .footer-column.fourth-column .footer-logo-mobile {
+    display: none;
+}
+footer .footer-inner-container {
+    max-width: 96%;
+    max-width: 1338px;
+    margin: auto;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 23% 20% 23% 30%;
+}
+
+.first-column {
+    max-width: 192px;
+}
+.second-column {
+    max-width: 163px;
+}
+.third-column {
+    max-width: 223px;
+}
+.fourth-column {
+    max-width: 340px;
+}
+
+footer .footer-column {
+    text-align: left;
+}
+footer .footer-column h2 {
+    padding-bottom: .75rem;
+    margin: 0;
+}
+footer .footer-column h3 {
+    text-decoration: underline;
+    padding-bottom: .5rem;
+    margin: 0;
+}
+footer .footer-column h3 span.plus-icon {
+    display: none;
+}
+footer .footer-column ul {
+    padding-left: 0;
+    margin: 0;
+}
+footer h3,
+footer ul li a {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+footer ul li {
+    list-style: none;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+footer .footer-column.fourth-column .newsletter-form .newsletter-form-container {
+    border: 1px solid #FFF;
+    border-radius: 35px;
+    padding: 3px;
+    display: flex;
+}
+footer .footer-column.fourth-column .newsletter-form .newsletter-form-container input[type="text"] {
+    padding: 5px;
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+    font-size: .825rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+footer .footer-column.fourth-column .newsletter-form .newsletter-form-container input[type="text"]:focus {
+    outline: none;
+    outline-width: none;
+}
+footer .footer-column.fourth-column .newsletter-form .newsletter-form-container input[type="text"]::placeholder {
+    text-transform: uppercase;
+    color: #FFF;
+    opacity: 1;
+    font-size: .675rem;
+    font-weight: 400;
+}
+footer .footer-column.fourth-column .newsletter-form .newsletter-form-container button {
+    background-color: #FFF;
+    color: #000;
+    font-size: 11px ;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+    position:relative;
+    align-self: center;
+    height: 36px;
+    padding: 10px 24px;
+    margin-left: auto;
+    border-radius: 100px;
+    border: none;
+    box-shadow: none;
+    overflow:hidden;
+}
+footer .footer-column.fourth-column .newsletter-form .newsletter-form-container button:hover {
+    background-color: rgba(255,255,255,.9);
+    cursor: pointer;
+}
+
+footer .footer-column .social-media {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+footer .footer-column .social-media ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+footer .footer-column .social-media .social-media-item {
+    background-color: #FFF;
+    display: inline-block;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer-column .social-media .social-media-item a {
+    width: max-content;
+    display: flex;
+}
+footer .bottom-footer {
+    max-width: 96%;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #fff3;
+}
+footer .bottom-footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+footer .bottom-footer ul li:first-of-type::before {
+    content: none;
+}
+footer .bottom-footer ul li::before {
+    content: "|";
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+footer .bottom-footer ul li {
+    padding: 0;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer .bottom-footer ul li a {
+    /*font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;*/
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+        
+@media screen and (min-width: 768px) and (max-width: 1024px) {            
+    footer .footer-top-row {
+        max-width: 90.67%;
+    }
+    footer .footer-inner-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 90.67%;
+    }
+    .first-column,
+    .second-column,
+    .third-column {
+        width: 40%;
+    }
+    .fourth-column {
+        width: 100%;
+        margin: auto;
+        margin-top: 1.25rem;
+    }
+    .fourth-column h2 {
+        text-align: center;
+    }
+    .fourth-column ul {
+        justify-content: center;
+    }
+    footer .footer-column .social-media {
+        padding-bottom: .75rem;
+        padding-top: 1rem;
+    }
+    footer .bottom-footer {
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {    
+    footer .footer-top-row {
+        max-width: 90.67%;
+        display: none;
+    }
+    footer .footer-top-row .footer-logo {
+        display: none;
+    }
+    footer .footer-inner-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 90.67%;
+        margin: auto;
+    }
+    .first-column,
+    .second-column,
+    .third-column {
+        max-width: unset;
+    }
+    footer .footer-column h3 {
+        font-size: .6875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #fff3;
+        display: flex;
+        cursor: pointer;
+    }
+    footer .footer-column h3 span.plus-icon {
+        margin-left: auto;
+        display: inherit;
+    }
+    footer .footer-column.fourth-column .footer-logo-mobile {
+        display: block;
+        margin: auto;
+        max-width: 270px;
+    }
+    footer .footer-column.fourth-column {
+        text-align: center;
+        margin: auto;
+        padding-top: 1.75rem;
+        height: unset;
+        width: 100%;
+    }
+    footer .footer-column.fourth-column h2 {
+        font-size: .6875rem;
+        font-weight: 600;
+        padding-bottom: .75rem;
+        padding-top: 1.25rem;
+    }
+    footer .footer-column .social-media {
+        padding-bottom: .75rem;
+        padding-top: 1rem;
+    }
+    footer .footer-column .social-media ul {
+        justify-content: center;
+    }
+    footer .bottom-footer {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    footer .bottom-footer ul {
+        padding-left: 0;
+    }
+    footer .bottom-footer ul li::before {
+        margin-left: .25rem;
+        margin-right: .25rem;
+
+    }
+    footer .footer-column {
+        overflow: hidden;
+        height: 53px;
+        transition: height .2s;
+    }
+    footer .footer-column.collapsed {
+        height: 53px;
+        transition: height .2s;
+    }
+}
   
 {%- endstyle -%}
 
-<h1>Footer Test</h1>
+<footer>
+        <div class="footer-top-row">
+            <img class="footer-logo" src="https://cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/logo-white-new.png?v=63947071723384878521658393950" alt="Diamond Art Club" />
+        </div>
+        <div class="footer-inner-container">
+            <div class="footer-column first-column collapsed">
+                <h3 class="footer-column-heading first-heading" onClick="collapseFooterCol(this)">About us <span class="plus-icon">+</span></h3>
+                <ul>
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">What is diamond art painting?</a></li>
+                    <li><a href="#">Step-by-step instructions</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Customer reviews</a></li>
+                    <li><a href="#">Store locator</a></li>
+                </ul>
+            </div>
+            <div class="footer-column second-column collapsed">
+                <h3 class="footer-column-heading second-heading" onClick="collapseFooterCol(this)">Customer service <span class="plus-icon">+</span></h3>
+                <ul>
+                    <li><a href="#">Contact us & FAQ's</a></li>
+                    <li><a href="#">Free accidental insurance</a></li>
+                    <li><a href="#">Lifetime warranty</a></li>
+                    <li><a href="#">Shipping policy</a></li>
+                    <li><a href="#">Return policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column third-column collapsed">
+                <h3 class="footer-column-heading third-heading" onClick="collapseFooterCol(this)">Savings & rewards <span class="plus-icon">+</span></h3>
+                <ul>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Cash back rewards</a></li>
+                    <li><a href="#">Military & first responder discount</a></li>
+                    <li><a href="#">Shop now, pay later!</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="footer-column fourth-column">
+                <img class="footer-logo-mobile" src="https://cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/logo-white-new.png?v=63947071723384878521658393950" alt="Diamond Art Club" />
+                <h2>Let’s keep in touch!</h2>
+                <form class="newsletter-form">
+                    <div class="newsletter-form-container">
+                        <input type="text" placeholder="Email address" required />
+                        <button type="submit">Sign me up</button>
+                    </div>
+                </form>
+                <div class="social-media">
+                    <ul>
+                        <li class="social-media-item instagram"><a href="#"><img class="social-media-icon" src="https://cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/icon-instagram-new.svg?v=36372731561856731351651237218" alt="facebook-icon" width="16" height="16">
+                        </a>
+                    </li>
+                        <li class="social-media-item facebook"><a href="#">
+                            <img class="social-media-icon" src="//cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/icon-facebook-new.svg?v=96468593611124948721651237209" alt="facebook-icon" width="16" height="16" />
+                        </a>
+                    </li>
+                        <li class="social-media-item pinterest"><a href="#">
+                            <img class="social-media-icon" src="https://cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/icon-pinterest-new.svg?v=43238125418804831001651237224" alt="pinterest-icon" width="16" height="16" />
+                        </a>
+                    </li>
+                        <li class="social-media-item youtube">
+                            <a href="#">
+                                <img class="social-media-icon" src="https://cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/icon-youtube-new.svg?v=167808784201264870881651237254" alt="pinterest-icon" width="16" height="16" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <ul>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">CCPA</a></li>
+                <li><a href="">Sitemap</a></li>
+                <li><a href="">Archived kits</a></li>
+                <li><span class="website-version">© 2022 </span><a href="#">Diamond art club</a></li>
+            </ul>
+        </div>
+    </footer>
 
 {% schema %}
   {
