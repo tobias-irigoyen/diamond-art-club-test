@@ -260,12 +260,56 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "1659380080fb51365a": {
+      "type": "purchase-includes",
+      "blocks": {
+        "8af56772-d899-44aa-b0bf-5e03f23cc02d": {
+          "type": "column",
+          "settings": {
+            "col_image": "shopify:\/\/shop_images\/icon-product-moneyback.png",
+            "text": "<p>30-Day Money Back Guarantee<\/p>"
+          }
+        },
+        "bc594752-e9c6-406c-b3bf-10e2c12ddcdb": {
+          "type": "column",
+          "settings": {
+            "col_image": "shopify:\/\/shop_images\/icon-product-cashback.png",
+            "text": "<p>10% cash-back rewards with every order <\/p>"
+          }
+        },
+        "8788a232-91fb-4221-b23f-b47fe593d930": {
+          "type": "column",
+          "settings": {
+            "col_image": "shopify:\/\/shop_images\/icon-product-warranty.png",
+            "text": "<p>Lifetime Warranty<\/p>"
+          }
+        },
+        "1240627f-0c76-40b8-85e0-b234736df171": {
+          "type": "column",
+          "settings": {
+            "col_image": "shopify:\/\/shop_images\/icon-product-diamond-spill.png",
+            "text": "<p>Free Diamond Spill insurance<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8af56772-d899-44aa-b0bf-5e03f23cc02d",
+        "bc594752-e9c6-406c-b3bf-10e2c12ddcdb",
+        "8788a232-91fb-4221-b23f-b47fe593d930",
+        "1240627f-0c76-40b8-85e0-b234736df171"
+      ],
+      "settings": {
+        "custom_heading": "Each Purchase Includes:",
+        "columns_quantity": 4
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "1659380080fb51365a"
   ]
 }
