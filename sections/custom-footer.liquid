@@ -306,11 +306,11 @@ footer .bottom-footer ul li a {
     }
     footer .footer-column {
         overflow: hidden;
-        height: 35px;
+        height: 43px;
         transition: height .2s;
     }
     footer .footer-column.collapsed {
-        height: 35px;
+        height: 43px;
         transition: height .2s;
     }
 }
@@ -417,7 +417,7 @@ const collapseFooterCol = function(el) {
         
 // Set fixed and dynamic heights to the clicked col element
     if (el.parentNode.classList.contains("collapsed")) {
-        el.parentNode.style.height = "35px";
+        el.parentNode.style.height = "43px";
     } else {
         el.parentNode.style.height = siblingHeight;
     }
