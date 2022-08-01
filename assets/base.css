@@ -1,4 +1,4 @@
-/* Color custom properties */
+* Color custom properties */
 
 :root,
 .color-background-1 {
@@ -3237,7 +3237,7 @@ footer .bottom-footer ul li a {
   width: 100%!important;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-  display: flex;
+  display: flex!important;
 }
 
 
