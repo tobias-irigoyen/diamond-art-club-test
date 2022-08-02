@@ -150,7 +150,7 @@
         <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
         <input min="1" type="number" id="quantity" name="quantity" value="1" /></center>
         <br />
-        <input type="submit" value="ADD CURRENT PRODUCT TO CART" class="btn" />
+        <input type="submit" value="Add current prod to cart" class="btn" />
     </form>
     <p>This is the product ID from the current product: <span>{{ product.id | json }}</span></p>
   </div>>
@@ -176,7 +176,7 @@
             <br />
             <input min="1" type="number" id="quantity" name="quantity" value="1" />
             <br />
-            <input type="submit" value="Add to cart" class="btn" />
+            <input type="submit" value="Add featured prod to cart" class="btn" />
         </form>
         {%- endfor -%}
     </ul>
