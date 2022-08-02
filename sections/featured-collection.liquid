@@ -156,7 +156,7 @@
         <br />
         <input type="submit" value="Add current prod to cart" class="btn" />
     </form>
-    <p>This is the product ID from the current product: <span>{{ product.id | json }}</span></p>
+    <p>The current product ID is: <span>{{ product.id | json }}</span></p>
   </div>>
 
 {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
@@ -174,7 +174,7 @@
         section_id: section.id,
         {{ product.id | json }}
         %}
-        <h3 style="font-weight: 700;">This is the featured product ID: <span style="font-weight: 500">{{ product.variants.first.id }}</span></h3>
+        <h3 style="font-weight: 700;">The featured product ID is: <span style="font-weight: 500">{{ product.variants.first.id }}</span></h3>
         <form method="post" action="/cart/add">
             <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
             <br />
