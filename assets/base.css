@@ -2713,6 +2713,9 @@ details-disclosure > details {
   }
 }
 
+#cart-notification {
+  background-color: #FFF;
+}
 .badge {
   border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
