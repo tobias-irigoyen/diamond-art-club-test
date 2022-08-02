@@ -26,6 +26,17 @@
 
   .card-wrapper.underline-links-hover {
     height: auto;
+  }
+  .recommended-products-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .recommended-products-container p {
+    font-weight: 700;
+  }
+  .recommended-products-container p span {
+    font-weight: 500;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -112,15 +123,16 @@
 
 {% endcomment %}
 
-  
-<h3 style="font-weight: 700;">This is a current product buy button</h3>
-<form style="border: 2px solid red; max-width: 350px;" method="post" action="/cart/add">
-    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-    <input min="1" type="number" id="quantity" name="quantity" value="1" /></center>
-    <br />
-    <input type="submit" value="ADD CURRENT PRODUCT TO CART" class="btn" />
-</form>
-<h3 style="font-weight: 700;">This is the product ID from the current product: <span style="font-weight: 500">{{ product.id | json }}</span></h3>
+  <div class="recommended-products-container">
+    <p style="font-weight: 700;">This is a current product buy button</p>
+    <form style="border: 2px solid red; max-width: 350px;" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+        <input min="1" type="number" id="quantity" name="quantity" value="1" /></center>
+        <br />
+        <input type="submit" value="ADD CURRENT PRODUCT TO CART" class="btn" />
+    </form>
+    <p style="font-weight: 700;">This is the product ID from the current product: <span style="font-weight: 500">{{ product.id | json }}</span></p>
+  </div>>
 
 {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
 {% render
