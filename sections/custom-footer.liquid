@@ -6,7 +6,7 @@ footer * {
     letter-spacing: initial;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 footer {
     background-image: url("//cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/footer-bg-new.png?v=152546701259578080271658394209"),linear-gradient(180deg,#133e42,#082023);
@@ -73,6 +73,19 @@ footer ul li a {
     color: #fff;
     text-decoration: none;
     text-transform: capitalize;
+    position: relative;
+}
+footer ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 0px;
+  transition: .2s ease-in-out;
+}
+footer ul li a:hover::after {
+  width: 100%;
 }
 footer ul li {
     list-style: none;
