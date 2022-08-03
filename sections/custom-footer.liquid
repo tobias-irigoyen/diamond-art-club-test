@@ -1,28 +1,20 @@
 -{%- style -%}
-@font-face {
-    font-family: 'Red Hat Display';
-    src: local('RedHatDisplayMedium'), local('RedHatDisplay-Medium'),
-        url('RedHatDisplay-Medium.woff2') format('woff2'),
-        url('RedHatDisplay-Medium.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  @font-face {
+    font-family: 'redhat_displaymedium';
+    src: url('fonts/redhat_displaymedium.woff2') format('woff2'),
+         url('fonts/redhat_displaymedium.woff') format('woff')
+}
+  @font-face {
+    font-family: 'redhat_display';
+    src: url('fonts/redhat_display.woff2') format('woff2'),
+         url('fonts/redhat_display.woff') format('woff')
 }
 
-@font-face {
-    font-family: 'Red Hat Display';
-    src: local('RedHatDisplayRegular'), local('RedHatDisplay-Regular'),
-        url('RedHatDisplay-Regular.woff2') format('woff2'),
-        url('RedHatDisplay-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
   
 footer * {
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Red Hat Display';
+    font-family: 'redhat_display';
     letter-spacing: initial;
 }
 a:hover {
@@ -72,13 +64,14 @@ footer .footer-column {
 }
 footer .footer-column h2 {
     padding-bottom: .75rem;
+    font-family: 'redhat_displaymedium';
     margin: 0;
 }
 footer .footer-column h3 {
     text-decoration: underline;
     padding-bottom: .5rem;
     margin: 0;
-    font-family: 'Red Hat Display';
+    font-family: 'redhat_displaymedium';
     font-weight: 600;
     font-style: normal;
 }
