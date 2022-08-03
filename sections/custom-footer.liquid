@@ -1,20 +1,8 @@
 -{%- style -%}
-  @font-face {
-    font-family: 'RedHatDisplay-Medium';
-    src:  url('{{ "RedHatDisplay-Medium.woff" | asset_url }}') format("woff");
-          url('{{ "RedHatDisplay-Medium.woff2" | asset_url }}') format("woff2");
-}
-  @font-face {
-    font-family: 'RedHatDisplay-Regular';    
-    src:  url('{{ "RedHatDisplay-Regular.woff" | asset_url }}') format("woff");
-          url('{{ "RedHatDisplay-Regular.woff2" | asset_url }}') format("woff2");
-}
-
   
 footer * {
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'RedHatDisplay-Regular';
     letter-spacing: initial;
 }
 a:hover {
@@ -64,16 +52,14 @@ footer .footer-column {
 }
 footer .footer-column h2 {
     padding-bottom: .75rem;
-    font-family: 'RedHatDisplay-Medium';
     margin: 0;
+    font-weight: 600;
 }
 footer .footer-column h3 {
     text-decoration: underline;
     padding-bottom: .5rem;
     margin: 0;
-    font-family: 'RedHatDisplay-Medium';
     font-weight: 600;
-    font-style: normal;
 }
 footer .footer-column h3 span.plus-icon {
     display: none;
