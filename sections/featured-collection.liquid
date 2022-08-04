@@ -185,9 +185,39 @@
             <input type="submit" value="Add featured prod to cart" class="btn" />
         </form>
         {%- endfor -%}
+        {% comment %}
+        <button onClick="testClickHandler({{ product.variants.first.id }}, '7745058537727')">Add two products</button>
+        {% endcomment %}
     </ul>
 </slider-component>
 
+  
+  <script>
+    {% comment %}
+  function testClickHandler(product1, product2) {
+    console.log(product2);
+    const formData = {
+     'items': [{
+      'id': product2,
+      'quantity': 15
+      }]
+    };
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      return response.json();
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
+  {% endcomment %}
+  </script>
 
 
 
